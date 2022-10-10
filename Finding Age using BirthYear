@@ -1,0 +1,36 @@
+// WAP to Find Age Using Birth Year by Method
+
+import java.util.Scanner;
+public class BirthYear {
+    public static void main(String[] args) {
+        age();
+        // age without arguments, whereas insertedAge is using argument '2002'
+        insertedAge(2002);
+    }
+
+    public static void age() {
+        // this one is taking user's input
+        Scanner scan = new Scanner (System.in);
+        System.out.println("Enter your birth year");
+        int birthDate = scan.nextInt();
+
+        int age = 2022 - birthDate;
+        System.out.println("You are "+age+" years old.");
+        // some further if else statement use
+        if (age >= 21) {
+            System.out.println("You can smoke legally in the US. ");
+        } else {
+            System.out.println("Do not smoke until you reach your legal age");
+        }
+
+    }
+    // bornYear as parameter
+    public static void insertedAge(int bornYear){
+        int yourAge = 2022 - bornYear;
+        System.out.println("Hey, If you were born in 2002, you would be "+yourAge+ " years old.");
+
+
+
+    }
+
+}
